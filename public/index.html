@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Localhost WhatsApp</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="chat-box">
+  <div class="header">
+    💬 Localhost WhatsApp
+    <span id="status">Offline</span>
+    <button id="darkBtn">🌙</button>
+  </div>
+
+  <div id="messages"></div>
+  <div id="typing"></div>
+
+  <div class="input-area">
+    <button id="emojiBtn">😄</button>
+    <input id="msg" placeholder="Type message...">
+    <button id="send">Send</button>
+  </div>
+
+  <div id="emojiBox" class="emoji-box">
+    😀 😁 😂 🤣 😍 ❤️ 👍 🔥 😭 😡 🙏 🎉 💀 🤡 🥲
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script1.js"></script>
+</body>
+</html>
